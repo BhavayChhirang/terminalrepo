@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .body{
+        height: 100vh;
+        width: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxes{
+        height: 300px;
+        width: 300px;
+        border: 2px black solid;
+    }
+    .box{
+        height: 40px;
+        width: 40px;
+        border: 2px black solid;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 2s;
+        transition-delay: 2s;
+        transition-property:transform ;
+        transition-timing-function:ease-in-out ;
+    }
+    .transform{
+        /*transform: rotate(50deg);*/
+        transform: translateX(100%);
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box transform">box</div>
+    </div>
+</body>
+</html>

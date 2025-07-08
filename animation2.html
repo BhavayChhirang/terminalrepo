@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+        height: 300px;
+        width: 300px;
+        border: 2px black solid;
+        }
+        .box{
+        height: 80px;
+        width: 80px;
+        border: 2px black solid;
+        text-align: center;
+        background-color: purple;
+        color: white;
+        animation-name: abrakadabra;
+        animation-timing-function:ease-in-out ;
+        animation-duration: 3s;
+        animation-delay: 2s ;
+        animation-iteration-count: 3;
+        position: relative;
+        animation-direction: alternate;
+        /*animation-fill-mode: forwards;*/
+        animation-fill-mode: backwards;
+        }
+        @keyframes abrakadabra {
+            from {
+                background-color: purple;
+                left:0px
+
+            }
+            to {
+                background-color: green;
+                left: 200px;
+                }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">division</div>
+    </div>
+    
+</body>
+</html>

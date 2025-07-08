@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Multicolor Background</title>
+  <style>
+    :root {
+      --bg-color:linear-gradient(to right #000000, #ffffff);
+      --box-color: rgba(255, 255, 255, 0.3);
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg-color);
+        }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background: var(--box-color);
+    }
+    @media (max-width: 768px) {
+      :root {
+        --bg-color: linear-gradient(to right, #1eff00, #00aeff);
+        --box-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+    @media (max-width: 480px) {
+      :root {
+        --bg-color: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        --box-color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

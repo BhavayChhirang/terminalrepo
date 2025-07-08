@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+        height: 300px;
+        width: 300px;
+        border: 2px black solid;
+        position: relative;
+        }
+        .box{
+        height: 80px;
+        width: 80px;
+        border: 2px black solid;
+        text-align: center;
+        background-color: purple;
+        color: white;
+        border-radius: 10px ;
+        position: absolute;
+        animation-name: jumping ;
+        animation-timing-function: ease-in-out;
+        animation-duration: 4s;
+        animation-iteration-count: 5;
+        animation-fill-mode: forwards;
+        /*animation-name: abrakadabra;*/
+        
+        }
+        @keyframes abrakadabra {
+            from {
+                background-color: purple;
+                left:0px
+
+            }
+            to {
+                background-color: green;
+                left: 200px;
+                }
+        }
+        @keyframes jumping {
+            0%{
+            bottom : 1px;
+            left: 0%;}
+            20%{
+                bottom: 80%;
+                left: 18%;
+            }
+            30%{
+                bottom: 50%;
+                left: 20%;
+            }
+            60%{
+                bottom: 20%;
+                left: 60%;
+            }
+            100%{
+                bottom: 1%;
+                left: 0% ;
+            }
+
+            
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">division</div>
+    </div>
+    
+</body>
+</html>
