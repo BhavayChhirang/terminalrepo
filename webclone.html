@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        /** {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .navbar img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .login {
+            position: relative;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            font-size: larger;
+            cursor: pointer;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .login:hover {
+            color: royalblue;
+        }
+
+        .login:visited {
+            color: green;
+        }
+
+
+        .homebutton {
+            cursor: pointer;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+        }*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: black;
+
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .left,
+        .right {
+            width: 40%;
+            height: 100%;
+        }
+
+        .left {
+            display: flex;
+            color: wheat;
+
+        }
+
+        .icon {
+            width: 15%;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .home {
+            width: 15%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: larger;
+        }
+
+        @media screen and (min-width: 600px) {
+            .icon {
+                font-size: 60px;
+            }
+
+            .home {
+                font-size: 35px;
+
+            }
+
+            .home i {
+                width: 54px;
+                height: 54px;
+
+            }
+
+        }
+
+        .home i {
+            border: 5px rgb(50, 50, 50) solid;
+            border-radius: 50%;
+            background-color: rgb(50, 50, 50);
+            padding: 2px;
+
+        }
+
+        .search {
+            background-color: rgb(40, 40, 40);
+            font-size: xx-large;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15px;
+            border-radius: 70px;
+            height: 70%;
+        }
+
+        input[type="text"] {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            width: 80%;
+            height: 80%;
+            font-size: larger;
+            outline: 1px rgb(41, 41, 41) solid;
+        }
+        .rightside{
+            display: flex;
+            width: 30%;
+            justify-content: space-evenly;
+            font-size: x-large;
+        
+            align-items: center;
+        
+        }
+        .signup{
+            font-size: xx-large;
+            width: 20%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .divider{
+            
+            width: 10%;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .right{
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .login{
+            width: 15%;
+            
+            border-radius: 50px;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: white;
+            height: 50%;
+            
+
+        }
+        .install{
+            width: 20%;
+            font-size: xx-large;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                alt="Spotify" class="logo" />
+        </div>
+        <div class="homebutton">home</div>
+        <div class="searchbar"><input type="text" placeholder="what to play?"></div>
+        <div class="links">
+            <a href="#" target="_blank">Premium</a>
+            <a href="#" target="_blank">download</a>
+            <a href="#" target="_blank">support</a>
+            <a href="#" target="_blank">hello</a>
+            <button type="button" class="login">login</button>
+        </div> -->
+        <div class="left">
+            <div class="icon"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home"><i class="fa-solid fa-house"></i></div>
+            <div class="search"><i class="fa-solid fa-magnifying-glass" id="iconsearch"></i><input type="text"
+                    placeholder="what to play ?" id="what">|<i class="fa-solid fa-folder-open"></i></div>
+        </div>
+        <div class="right">
+            <div class="rightside">
+                <a href="#" target="_blank">premium</a>
+                <a href="#" target="_blank">support</a>
+                <a href="#" target="_blank">download</a>
+
+            
+            </div>
+            <div class="divider">|</div>
+            <div class="install"><i class="fa-solid fa-download"></i>Install</div>
+            <div class="signup">
+                <a href="#" target="_blank">Signup</a></div>
+            <div class="login">Log in</div>
+        </div>
+    </nav>
+</body>
+
+</html>
