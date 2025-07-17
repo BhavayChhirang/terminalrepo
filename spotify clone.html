@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -69,6 +69,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .navbar {
@@ -93,7 +94,6 @@
         .left {
             display: flex;
             color: wheat;
-
         }
 
         .icon {
@@ -120,71 +120,81 @@
 
         @media screen and (min-width: 600px) {
             .icon {
-                font-size: 60px;
+                font-size: 2vw;
             }
 
             .home {
-                font-size: 35px;
-
+                font-size: 1.2vw;
+                display: flex;
+                text-align: center;
+                justify-content: start;
+                align-items: center;
             }
 
-            .home i {
-                width: 54px;
-                height: 54px;
-
+            .home div {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
-
         }
 
-        .home i {
-            border: 5px rgb(50, 50, 50) solid;
+        .home div {
+            border: 2px rgb(50, 50, 50) solid;
             border-radius: 50%;
             background-color: rgb(50, 50, 50);
-            padding: 2px;
-
+            padding: 1px;
         }
 
         .search {
             background-color: rgb(40, 40, 40);
-            font-size: xx-large;
+            font-size: large;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin-top: 15px;
             border-radius: 70px;
-            height: 70%;
+            height: 60%;
+            padding: 5px;
         }
 
         input[type="text"] {
             background-color: rgb(40, 40, 40);
             color: white;
             width: 80%;
-            height: 80%;
-            font-size: larger;
-            outline: 1px rgb(41, 41, 41) solid;
+            height: 60%;
+            font-size: medium;
+            /* outline: 1px rgb(41, 41, 41) solid; */
+            border: none;
         }
-        .rightside{
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+
+        .rightside {
             display: flex;
-            width: 30%;
+            width: 40%;
             justify-content: space-evenly;
-            font-size: x-large;
-        
+            /* font-size: x-large; */
+
             align-items: center;
-        
         }
-        .signup{
-            font-size: xx-large;
+
+        .signup {
+            /* font-size: xx-large; */
             width: 20%;
-            
+
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
-        .divider{
-            
+
+        .divider {
             width: 10%;
-            font-size: xx-large;
+            /* font-size: xx-large; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -194,35 +204,115 @@
             text-decoration: none;
             color: white;
         }
-        .right{
+
+        .right {
             display: flex;
             color: white;
+            font-size: large;
             align-items: center;
             justify-content: space-evenly;
-
         }
-        .login{
+
+        .login {
             width: 15%;
-            
+
             border-radius: 50px;
-            font-size: x-large;
+            /* font-size: x-large; */
             display: flex;
             justify-content: center;
             align-items: center;
             color: black;
             background-color: white;
             height: 50%;
-            
-
         }
-        .install{
+
+        .install {
             width: 20%;
-            font-size: xx-large;
-            
+            /* font-size: xx-large; */
+
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+        }
+
+        /* mainbody start */
+        main {
+            height: 80vh;
+            width: 100vw;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 2px solid white;
+            /* border-radius: 20px; */
+        }
+
+        .leftMain {
+            height: 100%;
+            width: 21%;
+            border: 2px solid white;
+
+        }
+
+        .rightMain {
+            height: 100%;
+            width: 78%;
+            border: 2px solid white;
+        }
+
+        .Toplibrary {
+            margin: 5px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .Toplibrary h2,
+        .Toplibrary i {
+            color: white;
+            font-size: large;
+        }
+
+        .createLib {
+            width: 90%;
+            height: 45%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+            border: 2px solid white;
+            overflow-y: auto;
+            scrollbar-color: rgb(50, 50, 50);
+        }
+
+        .createLib::-webkit-scrollbar {
+            display: none;
+        }
+
+        .first {
+            display: flex;
+            gap: 10%;
+            font-size: medium;
+            height: 48%;
+            padding-top: 5%;
+            background-color: gray;
+            /* align-items: center; */
+            width: 98%;
+            border: 1px solid gray;
+            flex-direction: column;
+        }
+
+        .first button {
+            border-radius: 20px;
+
+        }
+
+        .first h3,
+        p {
+            background-color: grey;
         }
     </style>
 </head>
@@ -233,7 +323,7 @@
                 alt="Spotify" class="logo" />
         </div>
         <div class="homebutton">home</div>
-        <div class="searchbar"><input type="text" placeholder="what to play?"></div>
+        <divz class="searchbar"><input type="text" placeholder="what to play?"></div>
         <div class="links">
             <a href="#" target="_blank">Premium</a>
             <a href="#" target="_blank">download</a>
@@ -243,26 +333,60 @@
         </div> -->
         <div class="left">
             <div class="icon"><i class="fa-brands fa-spotify"></i></div>
-            <div class="home"><i class="fa-solid fa-house"></i></div>
-            <div class="search"><i class="fa-solid fa-magnifying-glass" id="iconsearch"></i><input type="text"
-                    placeholder="what to play ?" id="what">|<i class="fa-solid fa-folder-open"></i></div>
+            <div class="home">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                </div>
+            </div>
+            <div class="search">
+
+                <i style="cursor: pointer" class="fa-solid fa-magnifying-glass" id="iconsearch">
+                </i>
+                <input type="text" placeholder="what to play ?" id="what" />|<i style="cursor: pointer"
+                    class="fa-solid fa-folder-open"></i>
+            </div>
         </div>
         <div class="right">
             <div class="rightside">
                 <a href="#" target="_blank">premium</a>
                 <a href="#" target="_blank">support</a>
                 <a href="#" target="_blank">download</a>
-
-            
             </div>
             <div class="divider">|</div>
             <div class="install"><i class="fa-solid fa-download"></i>Install</div>
             <div class="signup">
-                <a href="#" target="_blank">Signup</a></div>
+                <a href="#" target="_blank">Signup</a>
+            </div>
             <div class="login">Log in</div>
         </div>
     </nav>
-    <div class="leftsidebar">i j</div>
+    <main>
+        <div class="leftMain">
+            <div class="Toplibrary">
+                <h2>Your Library</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="createLib">
+                <div class="first">
+                    <h3>Create your first palylist</h3>
+                    <p>it's easy we will help you</p>
+                    <button>Create palylist</button>
+                </div>
+                <div class="first">
+                    <h3>Create your first palylist</h3>
+                    <p>it's easy we will help you</p>
+                    <button>Create palylist</button>
+                </div>
+                <div class="first">
+                    <h3>Create your first palylist</h3>
+                    <p>it's easy we will help you</p>
+                    <button>Create palylist</button>
+                </div>
+            </div>
+        </div>
+        <div class="rightMain"></div>
+    </main>
+    <div class="adv"></div>
 </body>
 
 </html>
